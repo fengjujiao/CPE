@@ -1,0 +1,53 @@
+{
+  "empCode": "3333",
+  "empName": "王五",
+  "mhDate": "2019-10-15",
+  "empStatus": 1,
+  "checkIn": "2019-10-15 04-14-07",
+  "checkOut": "2019-10-21 06-14-11",
+  "totalHour": 22,
+  "leaveStart": "2019-10-22 04-14-31",
+  "leaveEnd": null,
+  "leaveTotalHour": null,
+  "travelStrat": null,
+  "travelEnd": null,
+  "travelTotalHour": null,
+  "createUserCode": null,
+  "createDateTime": 1571812214000,
+  "mhWorkTimes": [
+    {
+      "workspace": "办公室",
+      "workattribute": "管理服务及其他",
+      "workname": "会议",
+      "workstage": "1",
+      "post": "1",
+      "workrole": "1",
+      "workhours": 5
+    }
+  ]
+}
+//工作环境 private String workspace;
+//工作属性 private String workattribute;
+//工作名称 private String workname;
+//工作阶段 private String workstage;
+//工作岗位 private String post;
+//工作角色 private String workrole;
+//工作时长 private Integer workhours;
+
+
+//记录ID private Long id;
+//员工编码 private String empCode;
+//员工姓名 private String empName;
+//具体某日工作记录填报 @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GTM+8") private Date mhDate;
+//员工状态 private int empStatus;
+//上班打卡时间 @JsonFormat(pattern = "yyyy-MM-dd hh-mm-ss",timezone = "GTM+8") private Date checkIn;
+//下班打卡时间 @JsonFormat(pattern = "yyyy-MM-dd hh-mm-ss",timezone = "GTM+8") private Date checkOut;
+//打卡时间合计 private Long totalHour;
+//请假离岗起始时间 @JsonFormat(pattern = "yyyy-MM-dd hh-mm-ss",timezone = "GTM+8") private Date leaveStart;
+//请假离岗结束时间 @JsonFormat(pattern = "yyyy-MM-dd hh-mm-ss",timezone = "GTM+8") private Date leaveEnd;
+//请假总时长 private Long leaveTotalHour;
+//出差起始时间 @JsonFormat(pattern = "yyyy-MM-dd hh-mm-ss",timezone = "GTM+8") private Date travelStrat;
+//出差结束时间 @JsonFormat(pattern = "yyyy-MM-dd hh-mm-ss",timezone = "GTM+8") private Date travelEnd;
+//出差总计时 private Long travelTotalHour; //记录创建者编号 private Long createUserCode;
+//记录创建时间 private Date createDateTime=new Date();
+//填报记录明细 private List<MHWorkTime> mhWorkTimes;
